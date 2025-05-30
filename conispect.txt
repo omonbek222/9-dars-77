@@ -1,0 +1,77 @@
+Namespace tushunchasi
+namespace bu TypeScriptda kodni guruhlash uchun ishlatiladi
+Bu orqali biz ozaro bogliq funksiyalar klasslar interfeyslarni bitta joyga jamlashimiz mumkin
+namespace ishlatilsa kod tartibli oson boshqariladigan bo‘ladi
+Bu ES6 module system'dan oldingi esk usul lekin hanuz ba'zida ishlatiladiayniqsa katta loyihalarda
+
+namespace MatUtils {
+  export function ad(a number, b: number): number {
+    return a + b;
+  }
+
+  eport function subtract(a: number, b: number): nmber {
+    retur a - b;
+  }
+}
+
+const sum = MathUtils.add(10, 5);
+console.log(sum); 
+
+
+
+generics
+generics tipelar bizga tipe scripda tiplarni dinamik tarzda berishga yordam berihga imkkon beradi Agar biz
+generic tipe dan song malum bir tipe beradigan bolsak generic tipemiz osha tipga ozgaradi.
+
+type A<T> = T;
+type B = A<string>: bu B =string 
+
+biron bir qiymatga teng bolishi mumkun
+
+tupe E = A<"TS">; E="TS"
+
+
+Utility Tipes
+Utility Tipes bu taypscript tomonidan taqdim etilgan tayyor generik tiplar ular bilan mavjud
+tiplar asosida yangi tiplar chiqarish osonlashadi
+user tipining barcha fieldlarini ? bilan ishlatadi
+
+Partial
+partial taypscripda yaratilgan tiplarning qiymatini optional holatga otkazish uchun ishlatiladi 
+
+requaired
+requaired tipescriptda tipilarni qiymatlarini optional holatdan requaired yani majburiyu
+holatiga otkazadi 
+
+nonaybile
+agar yaratilgan tipda nul va andifaynd yani aniqlanmagan qiymatlarni ajratib faqat 
+aniqlangan qiymatlarni qoldirarkan
+
+rekord
+agar yaratilgan tipda uning qiymatlarini tipi hamasi bir hil yani namber yoki string
+boladigan bolsa unda rekord utlisi ishlatiladi 
+
+redoniy
+yani biz yaratgan obj larimizi barcha keylarini ozgartirmaslik uchun redoniy ishlatiladi 
+
+redonli eray
+redonliu eray yaratilgan eraylarni qiymatlarini faqat oqish uchu ruhsat beradi 
+lekin ozgartirishga ruhsat bermayti
+
+pik 
+pik utlitasi tipescriptda yani tipi objektlarini yaratish va yaratilganini tipini ichidan 
+biron bir qiymatlarni ajratib olish uchun ishlatiladi ekan 
+
+extirakt 
+extirakt iki tiplarni qoshib tipida bor qiymatini qaytarib berarkan ustoz
+
+omit 
+omit yatilgan objekt tipini ortiqcha qiymatlarini ochirib yangi tipi yaratish uchun 
+ishlatilarkan 
+
+parametrs 
+parametrs utliti tipi fangshin paymetirlarini ozida roupe tipida saqlaydi ekan 
+
+consturiktirparametrs
+consturiktirparametrs tipescriptda mavjud bolgan yardamchi bir tur utlite tipe 
+hisoblanadi bu klass konsturuktirnning parametrlariga turini olish uchun ishlatilarkan  
